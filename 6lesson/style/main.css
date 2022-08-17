@@ -1,0 +1,21 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+.box:hover {
+  transform: rotateX(360deg);
+  transition: 2s;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.box2:hover {
+  transform: rotateY(3rad);
+  transition: 1s;
+  transform: scale(5);
+  transform: skew(-35deg);
+}/*# sourceMappingURL=main.css.map */

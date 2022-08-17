@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: gray;
+}
+.box{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    animation-name: racing;
+    margin: 10px 0px ;
+    animation-duration: 10s;
+    color: white;
+}
+@keyframes racing{
+   
+    to{
+        transform: translateX(1300px);
+        // transform: rotate(30deg);
+    }
+}
+.one{
+    background-color: blue;
+    animation-timing-function: linear;
+}
+.two{
+    background-color: green;
+    animation-timing-function: ease;
+}
+.three{
+    background-color: black;
+}
+.four{
+    background-color: aqua;
+    animation-timing-function: ease-in;
+}
+.five{
+    background-color: blue;
+    animation-timing-function: ease-out;
+}
+.six{
+    background-color: red;
+    animation-timing-function: ease-in-out;
+
+}
+
+.image__card1{
+    grid-area: a;
+    background-color: aqua;
+}
+.image__card2{
+    grid-area: b;
+    background-color: dodgerblue;
+}
+.image__card3{
+    grid-area: c;
+    background-color: red;
+}
+
+
+.container{
+    width: 60%;
+    height: 700px;
+    background-color: green;
+    margin: 150px auto;
+    display: grid;
+    grid-template-areas: 
+                        "a a a"
+                        "b c c"
+                        "b c c"
+                     ;
+}

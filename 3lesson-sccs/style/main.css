@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: aqua;
+  --sixe: 400px;
+}
+
+body {
+  background-color: var(--color);
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+}
+
+.box {
+  background-color: white;
+  width: var(--sixe);
+  height: var(--sixe);
+}
+.box:hover {
+  background-color: black;
+}
+
+.grandparent {
+  background-color: red;
+  width: 600px;
+  height: 600px;
+}
+.grandparent .parent {
+  width: 400px;
+  height: 400px;
+  background-color: green;
+}
+.grandparent .parent:hover {
+  background-color: gold;
+  transition: 1s;
+  cursor: pointer;
+}
+.grandparent .child {
+  width: 200px;
+  height: 200px;
+  background-color: #000000;
+  position: absolute;
+}
+.grandparent .grandchild {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.login {
+  width: 300px;
+  height: 50px;
+  color: red;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: gray;
+}
+
+.box {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  -webkit-animation-name: racing;
+          animation-name: racing;
+  margin: 10px 0px;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  color: white;
+}
+
+@-webkit-keyframes racing {
+  to {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes racing {
+  to {
+    transform: translateX(1300px);
+  }
+}
+.one {
+  background-color: blue;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.two {
+  background-color: green;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.three {
+  background-color: black;
+}
+
+.four {
+  background-color: aqua;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.five {
+  background-color: blue;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.six {
+  background-color: red;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.image__card1 {
+  grid-area: a;
+  background-color: aqua;
+}
+
+.image__card2 {
+  grid-area: b;
+  background-color: dodgerblue;
+}
+
+.image__card3 {
+  grid-area: c;
+  background-color: red;
+}
+
+.container {
+  width: 60%;
+  height: 700px;
+  background-color: green;
+  margin: 150px auto;
+  display: grid;
+  grid-template-areas: "a a a" "b c c" "b c c";
+}/*# sourceMappingURL=main.css.map */

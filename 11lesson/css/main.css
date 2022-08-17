@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.box {
+  width: 80%;
+  height: 200px;
+  background-color: gold;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item1 {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+}
+
+.item2 {
+  width: 200px;
+  height: 100%;
+  background-color: blue;
+}
+
+.item3 {
+  width: 200px;
+  height: 100%;
+  background-color: red;
+  align-self: flex-end;
+}/*# sourceMappingURL=main.css.map */

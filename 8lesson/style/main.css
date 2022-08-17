@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  -webkit-animation: goright 5s 5s infinite alternate backwards;
+          animation: goright 5s 5s infinite alternate backwards;
+}
+
+@-webkit-keyframes goright {
+  0% {
+    transform: translateX(0px);
+    background-color: green;
+  }
+  33% {
+    background-color: gold;
+    border-radius: 70px;
+    transform: rotate(90deg);
+  }
+  50% {
+    background-color: black;
+    border-radius: 70px;
+    transform: translateX(500px) translateY(500px);
+  }
+}
+
+@keyframes goright {
+  0% {
+    transform: translateX(0px);
+    background-color: green;
+  }
+  33% {
+    background-color: gold;
+    border-radius: 70px;
+    transform: rotate(90deg);
+  }
+  50% {
+    background-color: black;
+    border-radius: 70px;
+    transform: translateX(500px) translateY(500px);
+  }
+}
+.loader {
+  width: 500px;
+  height: 40px;
+  background-color: gray;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.fill {
+  -webkit-animation-name: gofill;
+          animation-name: gofill;
+  width: 0%;
+  height: 40px;
+  background-color: dodgerblue;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes gofill {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  50% {
+    background-color: gold;
+    width: 70%;
+  }
+  90% {
+    background-color: greenyellow;
+    width: 90%;
+  }
+  100% {
+    background-color: green;
+    width: 100%;
+  }
+}
+
+@keyframes gofill {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  50% {
+    background-color: gold;
+    width: 70%;
+  }
+  90% {
+    background-color: greenyellow;
+    width: 90%;
+  }
+  100% {
+    background-color: green;
+    width: 100%;
+  }
+}
+.box_one {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  -webkit-animation-name: goright;
+          animation-name: goright;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@keyframes goright {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    background-color: gold;
+    border-radius: 50px;
+    transform: rotate(90deg);
+  }
+  100% {
+    background-color: black;
+    border-radius: 30px;
+    transform: translateX(90vw);
+  }
+}/*# sourceMappingURL=main.css.map */

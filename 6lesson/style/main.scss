@@ -1,0 +1,26 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+&:hover{
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+    // &:active{
+
+    //     transform: translateX(calc(100vw - 200px) );
+    //     transition: 1s;
+    // }
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    &:hover{
+        transform: rotateY(3rad);
+        transition: 1s;
+        transform: scale(5);
+        transform: skew(-35deg);
+    }
+
+}
